@@ -58,6 +58,7 @@ color: var(--color-accent);
 text-transform: capitalize;
 font-size: 2rem;
 font-weight: bold;
+text-transform: capitalize;
 }
 .link-arrow::after{
     content: "-->";
@@ -72,3 +73,31 @@ font-weight: bold;
     .link-arrow{
      font-size: 1.5rem;
     }
+}
+/*badges*/
+.badge{
+ border-radius: 20px;   
+ padding: 0.5rem 2rem;
+font-weight: 600;
+white-space: nowrap;
+font-size: 2rem;
+}
+.badge--primary{
+    background: var(--color-primary);
+    color: #ffffff;
+}
+.badge--secondary{
+    background: var(--color-secondary);
+    color: #ffffff;
+}
+.badge--small{
+    font-size: 1.6rem;
+}
+@media  screen and (min-width:1024px) {
+    .badge{
+     font-size: 1.6rem;
+    }
+    .badge--small{
+        font-size: 1.2rem;
+    }
+}
