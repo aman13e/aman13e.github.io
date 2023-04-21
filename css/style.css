@@ -6,6 +6,7 @@
    --color-body:#918ca4;
    --color-border:#ccc;
    --border-radius:30px;
+   --color-body-darker: #5c5577;
 }
 
 *,
@@ -240,7 +241,7 @@ color: var(--color-headings);
 .input-group .btn{
 margin: 4px;
 }
-@media screen and(min-width:1024px){
+@media screen and (min-width:1024px){
   .input{
     font-size: 1.5rem;
   }  
@@ -304,7 +305,7 @@ margin: 4px;
    top: -6px;
    right: 5%;
 }
-@media screen and (min-width:1024){
+@media screen and (min-width:1024px){
    .plan__name{
 
     font-size: 1.4rem;
@@ -317,5 +318,67 @@ margin: 4px;
    }
    .plan__discription{
     font-size: 1.7rem;
+   }
+}
+
+/*Media*/
+.media{
+    display: flex;
+}
+.media__title{
+margin-top: 0;
+
+}
+.media__body{
+    margin: 0 2rem;
+}
+.media__image{
+    margin-top: 1rem;
+}
+
+/*Quotes*/
+
+.quote{
+    font-size: 3rem;
+    font-style: italic;
+    color:var(--color-body-darker);
+    line-height: 1.3;
+
+} 
+.quote__text::before
+{
+content: open-quote;
+}  
+.quote__text::after{
+    content: close-quote;
+}
+.quote__author{
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0;
+  
+}
+.quote__organization{
+  color: var(--color-headings); 
+  opacity: 0.4; 
+  font-size: 2rem;
+  font-style: normal;
+}
+.quote__line{
+    position: relative;
+    bottom: 10px;
+}
+@media screen and (min-width:1024px){
+   .quote{
+    font-size: 2rrem;
+   
+   } 
+   .quote__author{
+    font-size: 2.4rem;
+     
+   }
+   .quote__organization{
+    font-size: 1.6rem;
    }
 }
