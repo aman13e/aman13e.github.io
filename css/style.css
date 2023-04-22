@@ -183,6 +183,9 @@ font-size: 2rem;
     text-transform: uppercase;
     white-space: nowrap;
 }
+.btn--streched{
+    padding: auto 6rem;
+}
 .btn--primary{
 background: var(--color-primary);
 color: #fff;
@@ -439,3 +442,37 @@ content: open-quote;
         margin-left:6rem;
     }
  }
+/*callouts*/
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+.callout--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+.callout--heading{
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+
+}
+.callout--content{
+text-align: center;
+}
+@media screen and (min-width:768px) {
+   .callout--content{
+    text-align: left;
+   } 
+   .callout .btn{
+    justify-self: start;
+    margin: 0 2rem;
+   }
+   .callout .grid--1x2{
+    grid-template-columns: 1fr auto;
+   }
+}
